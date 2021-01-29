@@ -16,6 +16,11 @@ namespace CursoCSharp.Fundamentos
             CultureInfo cultura = new CultureInfo("en-US");//Permite padronizar a formatação para uma cultura específica.
             Console.WriteLine(valor.ToString("C3", cultura));
 
+            int inteiro = 256;
+            Console.WriteLine(inteiro.ToString("D10"));//Completa o número com zeros a esquerda.
+
+
+
         }
     }
 }

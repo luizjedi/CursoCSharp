@@ -6,6 +6,13 @@ namespace CursoCSharp.ClassesEMetodos
 {
     class ParametroPadrao
     {
+        /// <summary>
+        /// O valor padrão possibilita a chamada do método sem que sejam
+        ///inicializados todos atributos
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static int Somar(int a = 1, int b = 1)
         {
             return a + b;

@@ -14,6 +14,21 @@ namespace CursoCSharp.Colecoes
             Nome = nome;
             Preco = preco;
         }
+
+        //Método para comparar valores em vez de endereço de memória
+        public override bool Equals(object obj)
+        {
+            Produto outroProduto = (Produto)obj;
+            bool mesmoNome = Nome == outroProduto.Nome;
+            bool mesmoPreco = Preco == outroProduto.Preco;
+            return mesmoNome && mesmoPreco;
+        }
+
+        //Reduz o range de comparação dos itens
+        public override int GetHashCode()
+        {
+            return Nome.Length;
+        }
     }
 
     class ColecoesList
@@ -34,7 +49,7 @@ namespace CursoCSharp.Colecoes
 
             carrinho.AddRange(combo);//Adiciona todos os elementos da lista em uma única operação
             Console.WriteLine(carrinho.Count);//Quantos elementos possui o carrinho
-            carrinho.RemoveAt(3);//Remove o terceiro elemento do carrinho
+            carrinho.RemoveAt(3);//Remove o quarto elemento do carrinho
 
             foreach (var item in carrinho)
             {

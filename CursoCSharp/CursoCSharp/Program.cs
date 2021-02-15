@@ -81,6 +81,11 @@ namespace CursoCSharp
                 // Orientado Objeto
                 
                 {"Herança - Orientado Objetos", Heranca.Executar},
+                {"Construtor This - Orientado Objetos", ConstrutorThis.Executar},
+                {"Encapsulamento - Orientado Objetos", OO.Encapsulamento.Executar},
+                {"Polimorfismo - Orientado Objetos", Polimorfismo.Executar},
+                {"Interface - Orientado Objetos", OO.Interface.Executar},
+                {"Classe e Método Sealed - Orientado Objetos", OO.Sealed.Executar},
             });
 
             central.SelecionarEExecutar();

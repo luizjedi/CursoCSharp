@@ -7,6 +7,7 @@ using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.OO;
 using CursoCSharp.Colecoes;
 using CursoCSharp.MetodosEFuncoes;
+using CursoCSharp.Excecoes;
 
 namespace CursoCSharp
 {
@@ -96,6 +97,11 @@ namespace CursoCSharp
                 {"Delegates Funções Anônimas - Métodos e Funções", DelegateFunAnonima.Executar},
                 {"Delegates como Parâmetros - Métodos e Funções", DelegatesComoParametros.Executar},
                 {"Métodos de Extensão - Métodos e Funções", MetodosDeExtensao.Executar},
+                
+                // Exceções
+                
+                {"Primeira Exceção - Exceções", PrimeiraExcecao.Executar},
+                {"Exceções Personalizadas - Exceções", ExcecoesPersonalizadas.Executar},
             });
 
             central.SelecionarEExecutar();

@@ -9,6 +9,7 @@ using CursoCSharp.Colecoes;
 using CursoCSharp.MetodosEFuncoes;
 using CursoCSharp.Excecoes;
 using CursoCSharp.Api;
+using CursoCSharp.TopicosAvancados;
 
 namespace CursoCSharp
 {
@@ -110,6 +111,17 @@ namespace CursoCSharp
                 {"Lendo Arquivos - Usando API", LendoArquivos.Executar},
                 {"Exemplo FileInfo - Usando API", ExemploFileInfo.Executar},
                 {"Diretórios - Usando API", Diretorios.Executar},
+                {"Exemplo DirectoryInfo - Usando API", ExemploDirectoryInfo.Executar},
+                {"Exemplo Path - Usando API", ExemploPath.Executar},
+                {"Exxemplo TimeSpan - Usando API", ExemploTimeSpan.Executar},
+                
+                //Tópicos Avançados
+                
+                {"LINK #1 - Tópicos Avançados", LINK1.Executar},
+                {"LINK #2 - Tópicos Avançados", LINK2.Executar},
+                {"Nullables - Tópicos Avançados", ExemploNullables.Executar},
+                {"Dynamics - Tópicos Avançados", Dynamics.Executar},
+                {"Genéricos - Tópicos Avançados", ExemploGenerics.Executar},
             });
 
             central.SelecionarEExecutar();
